@@ -23,6 +23,7 @@ public class CraftTweakerFabric implements ModInitializer {
         
         // TODO("Will be removed")
         CraftTweakerCommon.registerCommandArguments();
+        
         CommandRegistrationCallback.EVENT.register((dispatcher, dedicated) -> {
             CraftTweakerCommon.registerCommands(dispatcher, dedicated ? Commands.CommandSelection.DEDICATED : Commands.CommandSelection.INTEGRATED);
         });

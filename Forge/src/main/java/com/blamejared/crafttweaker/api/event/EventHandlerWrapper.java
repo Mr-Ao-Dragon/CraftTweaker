@@ -20,7 +20,7 @@ public class EventHandlerWrapper<T extends Event> implements Consumer<T> {
         try {
             consumer.accept(t);
         } catch(Throwable throwable) {
-            CraftTweakerAPI.LOGGER.error("Error occured in event handler", throwable);
+            CraftTweakerAPI.LOGGER.error("Error occurred in event handler", throwable);
         }
     }
     
